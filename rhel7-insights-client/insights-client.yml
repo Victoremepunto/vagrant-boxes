@@ -56,8 +56,6 @@
       git:
         repo: "https://github.com/RedHatInsights/{{ item }}.git"
         dest: "/home/vagrant/{{ item }}"
-      args:
-        creates: "/home/vagrant/{{ item }}"
       loop:
         - insights-client
         - insights-core
